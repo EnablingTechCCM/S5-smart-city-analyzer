@@ -450,7 +450,7 @@ def personalize():
 
     # Return the top recommendations
     return jsonify({
-        "recommended_solutions": ranked_solutions[:5]  # Top 5 matches
+        "recommended_solutions": ranked_solutions[:7]  # Top 5 matches
     }), 200
 
 
