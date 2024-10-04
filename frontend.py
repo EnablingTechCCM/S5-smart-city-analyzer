@@ -2,7 +2,7 @@ import streamlit as st
 import requests
 import csv
 
-API_URL = "http://127.0.0.1:5000"
+API_URL = "https://IsabelMendez.pythonanywhere.com"
 
 st.title("Smart City S5 Framework Analyzer")
 
