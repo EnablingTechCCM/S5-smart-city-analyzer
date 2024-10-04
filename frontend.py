@@ -151,6 +151,17 @@ if st.session_state['analyze_clicked']:
             st.write("No associated personality traits were found based on the product title, description, and features.")
             st.write("You can manually adjust the personality traits sliders to see related solutions.")
     
+    # Add the new button (styled) to redirect to the S5 improvement link above the slider
+    st.markdown(
+        """
+        <a href="https://chatgpt.com/g/g-7SqJsJoeF-smart-city-s5-compliance-assistant" target="_blank">
+            <button style="background-color:Green;color:white;padding:10px 20px;border:none;border-radius:5px;cursor:pointer;">
+                Improve your product's S5 features
+            </button>
+        </a>
+        """, unsafe_allow_html=True
+    )
+    
     # Personalize Recommendations based on Big Five personality traits
     st.subheader("Adjust Personality Traits Sliders Based on Suggestions")
     openness = st.slider("Openness", 0.0, 1.0, st.session_state['openness'])
@@ -159,7 +170,7 @@ if st.session_state['analyze_clicked']:
     agreeableness = st.slider("Agreeableness", 0.0, 1.0, st.session_state['agreeableness'])
     neuroticism = st.slider("Neuroticism", 0.0, 1.0, st.session_state['neuroticism'])
 
-    if st.button("Show Solutions Based on Personality Traits"):
+    if st.button("Exemplify other solutions based on Personality Traits"):
         data = {
             "openness": openness,
             "conscientiousness": conscientiousness,
@@ -171,7 +182,7 @@ if st.session_state['analyze_clicked']:
         response = requests.post(f"{API_URL}/personalize", json=data)
         recommendations = response.json()['recommended_solutions']
         
-        st.write("Recommended Solutions:")
+        st.write("S5 Exemplification Solutions:")
         for rec in recommendations:
             st.subheader(rec['name'])
             st.write(f"Description: {rec['description']}")
@@ -184,6 +195,3 @@ if st.session_state['analyze_clicked']:
                     st.write(f"**{feature}:** {s5_features[feature]}")
             
             st.write("---")
-
-    # Add the new markdown link to redirect to the S5 improvement link
-    st.markdown("[Click here to improve your product's S5 features](https://chatgpt.com/g/g-7SqJsJoeF-smart-city-s5-compliance-assistant)")
