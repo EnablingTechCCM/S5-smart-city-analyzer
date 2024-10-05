@@ -1,5 +1,60 @@
 Keyword
-sensors
+Solar energy
+Battery monitoring
+Camera sensors
+Sensors
+Solar sensing
+Energy sensors
+Sensor-based design
+Environmental sensors
+Health sensors
+Grasping sensors
+Real-time health data
+Sonar sensors
+Weather sensors
+Plant sensors
+Building sensors
+Microgrid sensors
+Non-invasive sensors
+Distance sensors
+Grid performance sensors
+Driving behavior sensors
+ Weather data
+ Solar capture
+ Real-time data
+ Learning feedback
+ Real-time shading
+ Real-time feedback
+ Activity tracking
+ Crop health
+ Camera data
+ Position sensors
+ Sleep monitoring
+ Navigation sensors
+ Humidity
+ Energy use
+ Real-time performance
+ Real-time consumption
+ Gesture tracking
+ Emotion detection
+ Real-time monitoring
+ Monitoring
+ Sensors
+ Energy sensors
+ Usage data
+ Comfort sensing
+ User input
+ Data
+ Ultrasonic
+ Feedback
+ ECG
+ Air quality
+ Environment
+ Data feedback
+ Real-time input
+ Camera
+ Consumption
+ Alerts
 data
 monitoring
 real-time
@@ -22,7 +77,6 @@ input
 response
 control
 alert
-measurement
 real-time monitoring
 sensor networks
 data acquisition
@@ -40,7 +94,6 @@ data analysis
 sensing technology
 real-time data
 smart sensors
-environmental sensors
 temperature sensors
 motion detection
 tracking systems
@@ -145,14 +198,12 @@ RADAR
 Sonar
 MEMS
 IoT sensors
-smart sensors
 wearable sensors
 wireless sensors
 fiber optic sensors
 biosensors
 chemical sensors
 thermal sensors
-environmental sensors
 industrial sensors
 automotive sensors
 medical sensors
@@ -166,24 +217,15 @@ sensor grids
 wireless sensor networks
 AI-powered sensors
 cloud-connected sensors
-sensor calibration
 predictive maintenance sensors
 sensor data fusion
 sensor signal processing
 IoT sensor platforms
 IoT
-MEMS
-RADAR
-LiDAR
-Sonar
 fiber
 sensor
 signal
-network
-data
 algorithm
-tracking
-optical
 motion
 environment
 fusion
@@ -191,101 +233,53 @@ telemetry
 satellite
 array
 grid
-detection
-feedback
 remote
-input
 output
-system
-automation
-response
-information
 infrared
 proximity
-surveillance
 observation
-monitoring
-acquisition
 calibration
 prediction
-feedback
 actuator
-sensor
-control
-analysis
 thermal
-sensor
 AI
 smart
 adaptive
 ultrasonic
-gyroscope
-IoT sensors
-smart sensors
 remote sensors
-sensor networks
-sensor fusion
-data analysis
 motion sensors
-thermal sensors
 infrared sensors
-sensor calibration
-data acquisition
 fiber optics
-sensor data
 signal processing
 predictive maintenance
 cloud sensors
 sensor feedback
-sensor systems
-sensor input
 data fusion
 real-time sensors
 sensor response
 motion tracking
-environmental sensors
-temperature sensors
 vibration sensors
 pressure sensors
 flow sensors
 sensor automation
-wearable sensors
 signal detection
-wireless sensors
-sensor grids
 sensor telemetry
 detection systems
 AI sensors
-biosensors
 smart home
 network sensors
-optical sensors
 data monitoring
 sensor signals
-energy sensors
 voltage sensors
 current sensors
-industrial sensors
 sensor integration
 sensor control
-sensor systems
-sensor feedback
-motion detection
 real-time data analysis
-motion detection systems
-sensor-based automation systems
 AI-powered sensor networks
-remote sensing platforms
-sensor-driven control systems
-predictive maintenance sensors
 real-time feedback systems
 sensor fusion algorithms
-environmental sensor networks
 cloud-connected sensor platforms
-sensor signal processing
-smart home sensors
 wearable sensor technology
-wireless sensor networks
 motion detection sensors
 optical sensor arrays
 automotive sensor systems
@@ -293,7 +287,6 @@ remote sensor calibration
 sensor-based data fusion
 temperature monitoring systems
 real-time motion tracking
-sensor-driven environmental monitoring
 AI-powered sensing systems
 cloud-based sensor systems
 motion-sensing algorithms
@@ -309,12 +302,9 @@ sensor-based predictive maintenance
 sensor telemetry analysis
 sensor grid networks
 real-time sensing systems
-IoT sensor platforms
 energy-harvesting sensors
 smart sensor platforms
-automated detection systems
 remote sensor automation
-sensor network calibration
 temperature-sensing technologies
 smart city sensors
 sensor-based feedback systems
