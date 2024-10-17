@@ -4,22 +4,24 @@ import csv
 
 app = Flask(__name__)
 
-# Function to load keywords from a CSV file
-def load_keywords_from_csv(file_path):
-    keywords = []
+# Function to load keywords and levels from a CSV file
+def load_keywords_and_levels_from_csv(file_path):
+    keywords_levels = {}
     with open(file_path, mode='r') as file:
         reader = csv.DictReader(file)
         for row in reader:
-            keywords.append(row['Keyword'].lower())  # Ensure all keywords are in lowercase for matching
-    return keywords
+            keyword = row['Keyword'].lower()
+            level = int(row['Level'])
+            keywords_levels[keyword] = level  # Store keyword with its level
+    return keywords_levels
 
-# Load keywords from separate CSV files
+# Load keywords and levels from separate CSV files
 s5_keywords = {
-    "Smart": load_keywords_from_csv('smart.csv'),
-    "Sensing": load_keywords_from_csv('sensing.csv'),
-    "Sustainable": load_keywords_from_csv('sustainable.csv'),
-    "Social": load_keywords_from_csv('social.csv'),
-    "Safe": load_keywords_from_csv('safe.csv')
+    "Smart": load_keywords_and_levels_from_csv('smart.csv'),
+    "Sensing": load_keywords_and_levels_from_csv('sensing.csv'),
+    "Sustainable": load_keywords_and_levels_from_csv('sustainable.csv'),
+    "Social": load_keywords_and_levels_from_csv('social.csv'),
+    "Safe": load_keywords_and_levels_from_csv('safe.csv')
 }
 
 # Pre-defined solutions
@@ -348,6 +350,65 @@ solutions = [
     }
 ]
 
+# Function to load keywords and levels from a CSV file
+def load_keywords_and_levels_from_csv(file_path):
+    keywords_levels = {}
+    with open(file_path, mode='r') as file:
+        reader = csv.DictReader(file)
+        for row in reader:
+            keyword = row['Keyword'].lower()
+            level = int(row['Level'])
+            keywords_levels[keyword] = level  # Store keyword with its level
+    return keywords_levels
+
+# Load keywords and levels from separate CSV files
+s5_keywords = {
+    "Smart": load_keywords_and_levels_from_csv('smart.csv'),
+    "Sensing": load_keywords_and_levels_from_csv('sensing.csv'),
+    "Sustainable": load_keywords_and_levels_from_csv('sustainable.csv'),
+    "Social": load_keywords_and_levels_from_csv('social.csv'),
+    "Safe": load_keywords_and_levels_from_csv('safe.csv')
+}
+
+# Function to calculate average level based on matched keywords
+def calculate_average_level(features, category_keywords):
+    matched_levels = []
+    for feature in features:
+        for keyword, level in category_keywords.items():
+            if keyword in feature:
+                matched_levels.append(level)
+    
+    if matched_levels:
+        return np.mean(matched_levels)
+    else:
+        return 0  # Return 0 if no keywords matched
+
+# Route to analyze product and calculate S5 levels
+@app.route('/analyze', methods=['POST'])
+def analyze_product():
+    data = request.json
+    product_name = data.get('product_name')
+    description = data.get('description')
+    features = [feature.lower() for feature in data.get('features')]  # Lowercase for matching
+
+    combined_text = product_name + " " + description + " " + " ".join(features)
+
+    # Analyze the product based on S5 categories and calculate average levels
+    s5_analysis = {
+        "Smart": calculate_average_level(features, s5_keywords["Smart"]),
+        "Sensing": calculate_average_level(features, s5_keywords["Sensing"]),
+        "Sustainable": calculate_average_level(features, s5_keywords["Sustainable"]),
+        "Social": calculate_average_level(features, s5_keywords["Social"]),
+        "Safe": calculate_average_level(features, s5_keywords["Safe"])
+    }
+
+    return jsonify({
+        "product_name": product_name,
+        "s5_analysis": s5_analysis
+    }), 200
+
+# Route to suggest personality traits based on input remains unchanged
+
 # Function to calculate similarity score between two strings
 def calculate_similarity(a, b):
     return SequenceMatcher(None, a.lower(), b.lower()).ratio()
@@ -375,7 +436,6 @@ def suggest_personality_traits(product_name, product_description, solutions):
     else:
         return "No relevant match found."
 
-# Route to analyze and suggest personality traits based on input
 @app.route('/suggest_personality_traits', methods=['POST'])
 def suggest_personality_traits_route():
     data = request.json
@@ -386,35 +446,7 @@ def suggest_personality_traits_route():
     
     return jsonify({"personality_traits": personality_traits})
 
-@app.route('/solutions', methods=['GET'])
-def get_solutions():
-    return jsonify(solutions), 200
-
-@app.route('/analyze', methods=['POST'])
-def analyze_product():
-    data = request.json
-    product_name = data.get('product_name')
-    description = data.get('description')
-    features = [feature.lower() for feature in data.get('features')]  # Lowercase for matching
-
-    # Function to check if any feature matches keywords for a specific S5 category
-    def check_s5_category(features, category):
-        return any(keyword in feature for feature in features for keyword in s5_keywords[category])
-
-    # Analyze the product based on S5 categories
-    s5_analysis = {
-        "Smart": check_s5_category(features, "Smart"),
-        "Sensing": check_s5_category(features, "Sensing"),
-        "Sustainable": check_s5_category(features, "Sustainable"),
-        "Social": check_s5_category(features, "Social"),
-        "Safe": check_s5_category(features, "Safe")
-    }
-
-    return jsonify({
-        "product_name": product_name,
-        "s5_analysis": s5_analysis
-    }), 200
-
+# Route to personalize solutions based on Big Five personality traits
 @app.route('/personalize', methods=['POST'])
 def personalize():
     data = request.json
@@ -450,9 +482,8 @@ def personalize():
 
     # Return the top recommendations
     return jsonify({
-        "recommended_solutions": ranked_solutions[:7]  # Top 5 matches
+        "recommended_solutions": ranked_solutions[:7]  # Top 7 matches
     }), 200
-
 
 if __name__ == '__main__':
     app.run(debug=True)
