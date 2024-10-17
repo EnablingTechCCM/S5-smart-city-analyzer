@@ -1,8 +1,8 @@
 import streamlit as st
 import requests
 import csv
-import matplotlib.pyplot as plt
-import numpy as np
+#import matplotlib.pyplot as plt
+#import numpy as np
 
 API_URL = "https://IsabelMendez.pythonanywhere.com"
 
@@ -71,27 +71,27 @@ def provide_s5_feedback(s5_analysis):
     return feedback_messages
 
 # Function to plot radar chart based on S5 analysis
-def plot_radar_chart(s5_analysis):
-    labels = ['Smart', 'Sensing', 'Sustainable', 'Social', 'Safe']
-    values = []
+# plot_radar_chart(s5_analysis):
+ #   labels = ['Smart', 'Sensing', 'Sustainable', 'Social', 'Safe']
+  #  values = []
 
-    for label in labels:
-        levels = s5_analysis[label]
-        score = sum(level * len(keywords) for level, keywords in levels.items())
-        max_score = 3 * sum(len(keywords) for keywords in levels.values())
-        values.append(score / max_score if max_score > 0 else 0)
+#    for label in labels:
+#        levels = s5_analysis[label]
+#        score = sum(level * len(keywords) for level, keywords in levels.items())
+#        max_score = 3 * sum(len(keywords) for keywords in levels.values())
+#        values.append(score / max_score if max_score > 0 else 0)
 
-    angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
-    values += values[:1]
-    angles += angles[:1]
+#    angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
+#    values += values[:1]
+#    angles += angles[:1]
 
-    fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
-    ax.fill(angles, values, color='cyan', alpha=0.25)
-    ax.set_yticklabels([])
-    ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(labels)
+#   fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+#    ax.fill(angles, values, color='cyan', alpha=0.25)
+#    ax.set_yticklabels([])
+#    ax.set_xticks(angles[:-1])
+#    ax.set_xticklabels(labels)
 
-    st.pyplot(fig)
+#    st.pyplot(fig)
 
 # Suggest personality traits based on product name and description
 def suggest_personality_traits(product_name, description):
