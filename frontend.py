@@ -1,7 +1,8 @@
 import streamlit as st
 import requests
 import csv
-import plotly.graph_objects as go
+import matplotlib.pyplot as plt
+import numpy as np
 
 API_URL = "https://IsabelMendez.pythonanywhere.com"
 
@@ -80,21 +81,17 @@ def plot_radar_chart(s5_analysis):
         max_score = 3 * sum(len(keywords) for keywords in levels.values())
         values.append(score / max_score if max_score > 0 else 0)
 
-    fig = go.Figure(
-        data=go.Scatterpolar(
-            r=values,
-            theta=labels,
-            fill='toself'
-        )
-    )
-    fig.update_layout(
-        polar=dict(
-            radialaxis=dict(visible=True, range=[0, 1])
-        ),
-        showlegend=False,
-        title="S5 Features Radar Chart"
-    )
-    st.plotly_chart(fig)
+    angles = np.linspace(0, 2 * np.pi, len(labels), endpoint=False).tolist()
+    values += values[:1]
+    angles += angles[:1]
+
+    fig, ax = plt.subplots(figsize=(6, 6), subplot_kw=dict(polar=True))
+    ax.fill(angles, values, color='cyan', alpha=0.25)
+    ax.set_yticklabels([])
+    ax.set_xticks(angles[:-1])
+    ax.set_xticklabels(labels)
+
+    st.pyplot(fig)
 
 # Suggest personality traits based on product name and description
 def suggest_personality_traits(product_name, description):
