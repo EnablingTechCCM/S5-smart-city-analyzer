@@ -1,329 +1,508 @@
-Keyword
-Solar energy
-Battery monitoring
-Camera sensors
-Sensors
-Solar sensing
-Energy sensors
-Sensor-based design
-Environmental sensors
-Health sensors
-Grasping sensors
-Real-time health data
-Sonar sensors
-Weather sensors
-Plant sensors
-Building sensors
-Microgrid sensors
-Non-invasive sensors
-Distance sensors
-Grid performance sensors
-Driving behavior sensors
- Weather data
- Solar capture
- Real-time data
- Learning feedback
- Real-time shading
- Real-time feedback
- Activity tracking
- Crop health
- Camera data
- Position sensors
- Sleep monitoring
- Navigation sensors
- Humidity
- Energy use
- Real-time performance
- Real-time consumption
- Gesture tracking
- Emotion detection
- Real-time monitoring
- Monitoring
- Sensors
- Energy sensors
- Usage data
- Comfort sensing
- User input
- Data
- Ultrasonic
- Feedback
- ECG
- Air quality
- Environment
- Data feedback
- Real-time input
- Camera
- Consumption
- Alerts
-Cloud management
-Cloud navigation
-AI analysis
-AI lessons
-Shading algorithms
-AI optimization
-Thermostat AI
-AI experience
-AI control
-AI functions
-AI grasping
-AI diagnostics
-Mobility AI
-Cloud analytics
-Digital twins
-AI resource management
-Predictive AI
-AI therapy
-Grid management
-AI forecasting
-AI driving
- AI insights
- Smart charging
- Disease detection
- Adaptive robotics
- Energy analytics
- Behavior prediction
- User feedback
- IoT control
- Learning systems
- Machine learning
- Navigation
- Data insights
- Plant health
- AI optimization
- Interactive models
- Adaptive interfaces
- Adaptive diagnostics
- Energy insights
- Behavior analysis
- Data analytics
- Route optimization
- Automation
- AI control
- Interactive design
- Data control
- Design automation
- Teleoperation
- Smart control
- Health insights
- Obstacle control
- Weather monitoring
- Building management
- Energy efficiency
- Forecasting
- Learning
- Smart monitoring
- Interactive control
- Safety alerts
-intelligent
-AI
-automation
-optimization
-machine learning
-neural networks
-data-driven
-predictive
-adaptive
-autonomous
-IoT
-cloud
-smart
-analytics
-robotics
-algorithm
-dynamic
-connected
-interactive
-automated
-networked
-computing
-sensor
-device
-feedback
-AI-driven
-cognitive
-self-learning
-real-time
-innovative
-disruptive
-technology
-smart technology
-intelligent systems
-data analytics
-predictive analytics
-cloud computing
-smart networks
-AI systems
-smart devices
-autonomous vehicles
-smart infrastructure
-connected devices
-predictive maintenance
-data-driven decisions
-dynamic systems
-intelligent automation
-AI-driven technology
-smart grids
-smart cities
-real-time optimization
-robotic automation
-self-learning algorithms
-sensor networks
-automated systems
-networked devices
-cloud platforms
-smart home
-connected infrastructure
-smart industry
-dynamic feedback
-AI-driven analytics
-interactive systems
-automated control
-smart data
-IoT devices
-smart solutions
-intelligent feedback
-real-time analytics
-adaptive technology
-data-driven insights
-smart optimization
-smart platforms
-cloud-based systems
-connected homes
-automated vehicles
-cognitive computing
-AI infrastructure
-smart transportation
-AI-powered intelligent systems
-cloud-based smart solutions
-predictive data analytics
-real-time data processing
-autonomous decision making
-dynamic smart infrastructure
-IoT-connected devices
-adaptive machine learning algorithms
-AI-driven dynamic systems
-connected smart homes
-predictive maintenance systems
-intelligent transportation systems
-smart city solutions
-cloud-based computing platforms
-automated smart devices
-real-time feedback control
-data-driven intelligent systems
-AI-powered smart grids
-dynamic AI infrastructure
-neural network optimization
-AI-driven predictive analytics
-smart grid optimization
-intelligent cloud computing
-real-time smart analytics
-autonomous smart vehicles
-IoT-enabled smart infrastructure
-AI-driven real-time optimization
-smart transportation networks
-intelligent IoT systems
-smart industry platforms
-smart home automation
-predictive AI systems
-real-time smart feedback
-AI-powered dynamic optimization
-smart city planning
-data-driven cloud platforms
-smart energy management
-AI-powered predictive maintenance
-smart robotic automation
-dynamic connected systems
-real-time data-driven systems
-connected smart grids
-intelligent connected devices
-smart decision-making systems
-cloud-based AI solutions
-adaptive AI technologies
-intelligent smart homes
-automated AI systems
-AI-driven optimization platforms
-connected intelligent systems
-Apple HomeKit
-Google Nest
-Amazon Alexa
-Samsung SmartThings
-Philips Hue
-Xiaomi Smart Devices
-Ecobee
-August Smart Lock
-Ring
-Wyze
-ADT Smart Home
-Honeywell Smart Devices
-Bosch Smart Home
-LG Smart Appliances
-Sony Smart TVs
-Tesla
-GE Smart Appliances
-Schneider Electric
-Siemens Smart Devices
-Zigbee
-Z-Wave
-Bluetooth Low Energy
-Wi-Fi
-LoRaWAN
-NFC
-MQTT
-Thread
-Matter
-Modbus
-BACnet
-Ethernet
-LTE
-5G
-DLNA
-Sigfox
-CoAP
-OPC-UA
-EtherCAT
-RS-485
-ISA100
-HART
-EnOcean
-Wi-SUN
-Lora
-SCADA
-BACnet/IP
-LTE-M
-NB-IoT
-IEEE 802.15.4
-WiMAX
-cloud automation
-smart grid technology
-machine-to-machine communication
-AI-driven automation
-smart sensors integration
-connected car
-smart health devices
-wearable smart technology
-smart metering
-remote monitoring
-sensor fusion
-edge computing
-AI-powered decision-making
-data-driven solutions
-smart manufacturing
-smart agriculture
-intelligent transportation
-AI cloud integration
-smart city platforms
-smart lighting
-smart home security
-AI-driven energy efficiency
-automated control systems
-IoT-connected platforms
-digital twin technology
-smart industrial systems
-remote sensing technologies
-AI-powered healthcare
-connected home ecosystems
-automated vehicle navigation
-smart traffic management
-AI-driven predictive systems
-real-time communication protocols
-autonomous vehicle technology
+Keyword,Level
+Automation,1
+Weather monitoring,1
+Data processing,1
+System optimization,1
+Energy reporting,1
+Automated systems,1
+Data visualization,1
+Cloud storage,1
+Energy management tools,1
+System configuration,1
+IoT control tools,1
+Cloud services,1
+System automation,1
+Basic tracking systems,1
+Data storage,1
+Network connectivity,1
+System operation,1
+Data processing tools,1
+Basic monitoring tools,1
+Cloud management tools,1
+Real-time operation,1
+Basic analytics tools,1
+Data interfaces,1
+Control interfaces,1
+Basic reporting,1
+Cloud computing,1
+Automation tools,1
+Monitoring systems,1
+Smart platforms,1
+Data analysis tools,1
+Automated configuration,1
+Basic optimization,1
+Automation platforms,1
+Automation reporting,1
+System control,1
+Platform integration,1
+System management tools,1
+Real-time response systems,1
+Automated solutions,1
+Network integration,1
+System interfaces,1
+Cloud-based integration,1
+Interactive platforms,1
+Real-time control,1
+Automation management,1
+Basic configuration,1
+Data collection platforms,1
+Automation infrastructure,1
+Basic optimization tools,1
+Automated platforms,1
+Cloud services management,1
+Cloud control systems,1
+Digital systems,1
+Network analysis tools,1
+System information,1
+Automation feedback,1
+Platform management,1
+Digital management tools,1
+Cloud automation,1
+Cloud-based automation,1
+System configuration tools,1
+Digital interfaces,1
+System operations,1
+System control platforms,1
+System optimization platforms,1
+Basic platform control,1
+Automated configuration tools,1
+Cloud diagnostics,1
+Automated system feedback,1
+Cloud configuration,1
+Digital platforms,1
+Automated interfaces,1
+Automation monitoring,1
+System operation tools,1
+Cloud-based reporting,1
+Platform management systems,1
+Automated configuration interfaces,1
+System operation management,1
+Data processing platforms,1
+Network management systems,1
+Cloud systems integration,1
+System control services,1
+System integration platforms,1
+Automated response,1
+Basic control,1
+Routine processing,1
+Simple routing,1
+Basic scheduling,1
+Status check,1
+Information relay,1
+Data logging,1
+System notification,1
+Automated reports,1
+Remote monitoring,1
+Simple control loop,1
+Basic data flow,1
+Resource allocation,1
+Energy tracking,1
+Basic analytics,1
+Automated updates,1
+Task automation,1
+Connectivity setup,1
+Event monitoring,1
+Basic user interface,1
+Low-level integration,1
+Data transmission,1
+Infrastructure mapping,1
+Simple coordination,1
+Status update,1
+Automated alerts,1
+Basic operation,1
+Traffic management,1
+Simple algorithm,1
+Location mapping,1
+Remote access,1
+Timed activation,1
+Operational logging,1
+Traffic routing,1
+Automated messaging,1
+Routine checks,1
+Digital interface,1
+Control panel,1
+Timed response,1
+Communication relay,1
+Power monitoring,1
+Simple processing,1
+System activation,1
+Process scheduling,1
+Maintenance alert,1
+Data archiving,1
+Command execution,1
+Timed operations,1
+Energy allocation,1
+Remote control,1
+Simple interaction,1
+System logging,1
+Data backup,1
+Power allocation,1
+Network access,1
+Simple automation,1
+Energy monitoring,1
+User notification,1
+Basic processing,1
+Connectivity management,1
+Information hub,1
+Automated setup,1
+Control management,1
+Digital logging,1
+Command relay,1
+Power tracking,1
+Basic response,1
+Task tracking,1
+Network mapping,1
+Routine operations,1
+Simple infrastructure,1
+User logging,1
+Data management,1
+Basic connectivity,1
+Automated coordination,1
+System mapping,1
+Task management,1
+Energy logging,1
+Remote updates,1
+Location tracking,1
+Simple operation,1
+Communication setup,1
+Automated tracking,1
+Timed alerts,1
+Status relay,1
+Automated tasks,1
+Routine updates,1
+Basic monitoring,1
+Command activation,1
+Simple logging,1
+Network relay,1
+Data coordination,1
+Event logging,1
+Task relay,1
+Cloud management,2
+Cloud navigation,2
+Shading algorithms,2
+Cloud analytics,2
+Grid management,2
+Smart charging,2
+Data feedback,2
+Energy analytics,2
+User feedback,2
+IoT control,2
+Navigation,2
+Data insights,2
+Plant health,2
+Interactive models,2
+Energy insights,2
+Data analytics,2
+Route optimization,2
+Interactive design,2
+Data control,2
+Design automation,2
+Teleoperation,2
+Building management,2
+Energy efficiency,2
+Forecasting,2
+Smart monitoring,2
+Interactive control,2
+Safety alerts,2
+Data integration,2
+Cloud synchronization,2
+Smart infrastructure,2
+Network management,2
+Process automation,2
+AI-powered sensors,2
+System diagnostics,2
+Automation framework,2
+Cloud infrastructure,2
+Data clustering,2
+User customization,2
+Automated feedback,2
+Smart connectivity,2
+Sensor integration,2
+Digital management,2
+Automated control,2
+Energy algorithms,2
+Control interface,2
+Data systems,2
+Feedback mechanisms,2
+Response systems,2
+Data optimization,2
+Data synchronization,2
+Automation protocols,2
+Information systems,2
+Sensor analytics,2
+Cloud intelligence,2
+System feedback,2
+Control platforms,2
+AI data management,2
+Data streaming,2
+Cloud optimization,2
+IoT networks (control),2
+Real-time monitoring (control),2
+System management,2
+Automated data processing,2
+Process control,2
+Cloud-based optimization,2
+Network analysis,2
+Real-time tracking (AI-based),2
+Automation systems,2
+Cloud platforms,2
+Feedback mechanisms (AI),2
+AI-driven control,2
+Adaptive feedback systems,2
+Smart resource allocation,2
+Cloud storage management,2
+Real-time response,2
+IoT integration (control focus),2
+Automation platform,2
+AI monitoring systems,2
+Intelligent scheduling,2
+Traffic analysis,2
+Energy control,2
+Automation technology,2
+System optimization tools,2
+Cloud-based data,2
+Machine learning models,2
+Automated maintenance,2
+Network management tools,2
+Traffic optimization systems,2
+Data processing systems,2
+Real-time systems,2
+Cloud-based services,2
+Automation integration,2
+System integration tools,2
+Predictive maintenance systems,2
+Cloud-based feedback,2
+Digital AI processing,2
+Predictive analytics models,2
+Cloud control,2
+System integration,2
+Automated reporting,2
+Predictive models,2
+Adaptive learning systems,2
+Real-time control interfaces,2
+Cloud-based platforms,2
+Network monitoring,2
+Automated system management,2
+Energy control systems,2
+AI-powered scheduling,2
+Adaptive feedback processing,2
+Network data management,2
+Smart automation,2
+Interactive dashboards,2
+Data management systems,2
+AI-driven tracking,2
+IoT-based control systems,2
+Intelligent network management,2
+System feedback mechanisms,2
+Cloud computing services,2
+Cloud platforms integration,2
+Cloud navigation tools,2
+Cloud infrastructure tools,2
+Energy efficiency platforms,2
+Digital control systems,2
+AI-based scheduling,2
+AI-based learning models,2
+Adaptive feedback loops,2
+Real-time optimization interfaces,2
+System control tools,2
+Network analysis platforms,2
+Automation management systems,2
+Data control systems,2
+Adaptive processing models,2
+Cloud-based management,2
+Intelligent reporting systems,2
+AI-based decision support,2
+Predictive maintenance platforms,2
+Interactive analytics,2
+Smart learning interfaces,2
+Data control platforms,2
+Real-time response tools,2
+Automation solutions,2
+Network optimization tools,2
+System optimization frameworks,2
+AI analysis,3
+AI lessons,3
+AI optimization,3
+Thermostat AI,3
+AI experience,3
+AI control,3
+AI functions,3
+AI grasping,3
+AI diagnostics,3
+Mobility AI,3
+Digital twins,3
+AI resource management,3
+Predictive AI,3
+AI therapy,3
+AI forecasting,3
+AI driving,3
+AI insights,3
+Disease detection,3
+Adaptive robotics,3
+Behavior prediction,3
+Learning systems,3
+Machine learning,3
+Adaptive interfaces,3
+Adaptive diagnostics,3
+Behavior analysis,3
+Smart control,3
+Health insights,3
+Obstacle control,3
+Autonomous control,3
+Intelligent systems,3
+AI decision-making,3
+Real-time analytics,3
+Dynamic optimization,3
+Predictive maintenance,3
+Machine vision,3
+Cognitive computing,3
+Neural processing,3
+Behavior tracking,3
+Intelligent automation,3
+Data-driven models,3
+Virtual twins,3
+Edge computing,3
+Cloud AI,3
+Traffic prediction,3
+Automated learning,3
+Adaptive learning,3
+Pattern recognition,3
+Context-aware AI,3
+Smart adaptation,3
+Risk assessment,3
+Real-time processing,3
+Autonomous vehicles,3
+Control algorithms,3
+Cyber-physical systems,3
+Energy optimization,3
+Adaptive scheduling,3
+Sensor fusion,3
+AI augmentation,3
+Knowledge representation,3
+Intelligent feedback,3
+Contextual analysis,3
+AI management,3
+Smart grid solutions,3
+Reinforcement learning,3
+Neural computation,3
+Adaptive control,3
+Data prediction,3
+Real-time adjustment,3
+Decision algorithms,3
+AI-based models,3
+AI processing unit,3
+AI-driven feedback,3
+Autonomous functions,3
+Intelligent mapping,3
+Predictive modeling,3
+Behavioral AI,3
+Smart environment,3
+Predictive analysis,3
+System intelligence,3
+Self-learning systems,3
+Smart algorithms,3
+Cybersecurity AI,3
+Network intelligence,3
+Traffic optimization,3
+Intelligent planning,3
+Machine autonomy,3
+AI cloud solutions,3
+Predictive feedback,3
+Urban intelligence,3
+Autonomous navigation,3
+AI monitoring,3
+Intelligent diagnostics,3
+Real-time synchronization,3
+Data-driven automation,3
+Learning algorithms,3
+Predictive analytics,3
+Cognitive systems,3
+Neural networks,3
+Adaptive algorithms,3
+Advanced robotics,3
+Real-time optimization,3
+Dynamic learning,3
+Cognitive feedback,3
+Decision intelligence,3
+Virtual modeling,3
+Predictive control,3
+AI integration,3
+Cyber-physical integration,3
+Automated diagnostics,3
+Cognitive networks,3
+Real-time adaptation,3
+Machine reasoning,3
+Autonomous adaptation,3
+Intelligent agents,3
+Deep learning algorithms,3
+Energy forecasting,3
+AI decision support,3
+Autonomous control systems,3
+Autonomous monitoring,3
+Self-optimizing systems,3
+Predictive management,3
+AI-enhanced platforms,3
+Context-aware processing,3
+Automated navigation,3
+Data-driven insights,3
+Adaptive intelligence,3
+Smart grid intelligence,3
+Self-organizing networks,3
+Intelligent interfaces,3
+AI-driven diagnostics,3
+Cognitive processing,3
+Contextual learning,3
+Smart decision-making,3
+Intelligent optimization,3
+Reinforcement algorithms,3
+AI-powered prediction,3
+Automated machine learning,3
+Predictive algorithms,3
+Real-time feedback loops,3
+Intelligent automation systems,3
+Automated planning,3
+AI-controlled interfaces,3
+Digital intelligence,3
+Machine vision technology,3
+Autonomous decision-making,3
+Intelligent traffic control,3
+AI-based infrastructure,3
+Real-time AI analytics,3
+AI resource allocation,3
+Network optimization,3
+Advanced control systems,3
+Predictive scheduling,3
+Neural analysis,3
+Automated reasoning,3
+Real-time data processing,3
+Energy optimization AI,3
+AI-enhanced control,3
+Context-aware systems,3
+Cognitive automation,3
+Digital AI integration,3
+Smart resource management,3
+AI-driven interfaces,3
+AI orchestration,3
+Intelligent urban planning,3
+AI-augmented processes,3
+Autonomous AI systems,3
+Predictive traffic analytics,3
+Cognitive data processing,3
+AI-based smart grids,3
+Automated decision models,3
+AI learning systems,3
+Real-time control systems,3
+AI-powered mapping,3
+Intelligent diagnostics systems,3
+Self-optimizing algorithms,3
+Advanced cognitive control,3
+Intelligent feedback loops,3
+Predictive control systems,3
+AI process automation,3
+Cognitive decision-making,3
+AI-driven management,3
+Energy prediction algorithms,3
+Predictive urban intelligence,3
+AI,3
+Artificial vision,3
+Computer vision,3

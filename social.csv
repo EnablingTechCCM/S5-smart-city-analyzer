@@ -1,268 +1,335 @@
-Keyword
-Community engagement
-Eco-commuting
-Agricultural productivity
-Collaborative learning
-Comfort
-Community savings
-Urban comfort
-Collaboration
-Community food
-Public health
-Community integration
-Health improvement
-Mobility
-Community awareness
-Urban farming
-Inclusive management
-Inclusion
-Therapy support
-Education
-Interactive energy
-Public safety
- Solar learning
- Community well-being
- Crop health
- Interactive
- Community spaces
- Engagement
- User well-being
- Learning engagement
- Urban engagement
- Safety
- Inclusion
- Accessibility
- Independence
- Data sharing
- Local food
- Building comfort
- Community engagement
- Energy engagement
- Community
- Driving behavior
- Awareness
- Urban living
- Education
- User interaction
- Local farming
- Support
- Early diagnosis
- Efficiency
- Sustainability
- Community support
- Renewable energy
- Alerts
-community
-equity
-accessibility
-engagement
-participation
-interaction
-diversity
-justice
-well-being
-cooperation
-connectivity
-communication
-social
-network
-integration
-empowerment
-equality
-solidarity
-citizenship
-participatory
-empathy
-socially
-learning
-training
-teaching
-instruction
-pedagogy
-tutoring
-mentorship
-student engagement
-curriculum
-classroom
-learning outcomes
-e-learning
-blended learning
-virtual classrooms
-educational tools
-online learning
-student-centered learning
-adaptive learning
-lifelong learning
-interactive learning
-academic success
-student progress
-teacher training
-self-directed learning
-peer learning
-active learning
-gamification
-game-based learning
-badges
-leaderboards
-points systems
-challenges
-game elements
-rewards
-achievements
-virtual rewards
-progress tracking
-levels
-learning challenges
-game mechanics
-interactive games
-serious games
-educational games
-competition
-fun learning
-motivational tools
-learning incentives
-gameful learning
-interactive gameplay
-digital badges
-real-time feedback
-game dynamics
-skill development through games
-personalization
-customization
-tailoring
-adaptive systems
-individualized learning
-user preferences
-custom settings
-tailored experiences
-personalized feedback
-user-centric design
-individual needs
-learning paths
-customizable interfaces
-customized learning plans
-personalized recommendations
-adaptive feedback
-user profiles
-custom content
-bespoke solutions
-personalized experiences
-personalized learning
-custom configurations
-custom user experiences
-adaptive personalization
-customizable settings
-user-specific content
-tailored feedback
-welfare
-health
-happiness
-mental health
-emotional well-being
-physical health
-quality of life
-social welfare
-community well-being
-wellness
-prosperity
-security
-life satisfaction
-work-life balance
-wellness programs
-mental wellness
-emotional health
-stress reduction
-healthy living
-positive psychology
-social health
-wellness education
-holistic well-being
-harmony
-social support
-wellness services
-support networks
-social inclusion
-public engagement
-community building
-citizen participation
-digital divide
-social justice
-urban inclusion
-inclusive design
-community support
-social networks
-social responsibility
-public participation
-social impact
-equitable access
-social equity
-social cohesion
-cultural diversity
-social well-being
-public services
-social collaboration
-inclusive community
-citizen empowerment
-collective responsibility
-shared resources
-civic participation
-urban integration
-social resilience
-community engagement platforms
-socially inclusive design
-equitable access to services
-digital literacy programs
-community participation initiatives
-civic responsibility projects
-inclusive public policies
-social impact assessment
-collaborative urban planning
-public service improvement
-civic engagement tools
-social justice initiatives
-cultural awareness campaigns
-inclusive urban development
-collective community efforts
-social network expansion
-citizen participation programs
-community-oriented solutions
-social empowerment strategies
-civic duty participation
-social cohesion programs
-digital accessibility platforms
-engagement with citizens
-supportive community efforts
-inclusive social policies
-social welfare programs
-digital inclusion projects
-social safety nets
-public-private partnerships
-citizen-driven development
-community-based planning
-social innovation projects
-community collaboration networks
-social capital development
-collective social responsibility
-grassroots community movements
-social development goals
-citizen participation frameworks
-social integration initiatives
-public engagement frameworks
-digital citizenship education
-community-led urban planning
-social connectivity efforts
-inclusive public service design
-equitable resource distribution
-community support systems
-social inclusion measures
-public welfare improvements
-civic engagement enhancement
-social innovation hubs
-social development policies
-citizen engagement platforms
-social interaction tools
-digital social initiatives
-civic responsibility networks
-community empowerment programs
-socially conscious development
-collaborative civic efforts
+Keyword,Level
+Comfort,1
+Community awareness,1
+Therapy support,1
+User well-being,1
+Independence,1
+Awareness,1
+Support,1
+Personal support,1
+Therapy assistance,1
+Health tips,1
+Neighborhood safety,1
+Local care,1
+Individual comfort,1
+Awareness programs,1
+Small group workshops,1
+Personal mobility aid,1
+Accessibility guide,1
+Local event,1
+Small-scale gathering,1
+Personal interaction,1
+Self-help resource,1
+Safety measures,1
+Wellness program,1
+Neighborhood watch,1
+Individual coaching,1
+Personal development,1
+Safety training,1
+Individual support,1
+Therapy group,1
+Awareness session,1
+Stress relief,1
+Personal wellness,1
+Health awareness,1
+Individual engagement,1
+Local outreach,1
+Small-scale relief,1
+One-on-one support,1
+Personal safety,1
+Awareness campaign,1
+Local improvement,1
+Personal empowerment,1
+Accessibility ramp,1
+Therapy workshop,1
+Stress management,1
+Local assistance,1
+Minor infrastructure,1
+Individual counseling,1
+Health initiative,1
+Local guide,1
+Well-being tips,1
+Community talk,1
+Safety checklist,1
+Wellness checkup,1
+Health guide,1
+Personal training,1
+Local repair,1
+Neighborhood aid,1
+Personal security,1
+Stress reduction,1
+Local comfort,1
+Safety awareness,1
+Health check,1
+Individual access,1
+Small-scale project,1
+Neighborhood meeting,1
+Safety manual,1
+Personal hygiene,1
+Local fitness,1
+Stress relief tips,1
+Personal therapy,1
+Health reminder,1
+Individual practice,1
+Small event,1
+Neighborhood club,1
+Local counseling,1
+Security guide,1
+Personal care,1
+Minor repair,1
+Local food drive,1
+Accessibility info,1
+Individual care,1
+Small activity,1
+Neighborhood tour,1
+Local info session,1
+Safety info,1
+Personal check,1
+Local learning,1
+Self-care session,1
+Individual safety,1
+Small meetup,1
+Neighborhood help,1
+Personal alert,1
+Safety reminder,1
+Community post,1
+Local hygiene,1
+Personal habit,1
+Individual alert,1
+Wellness tips,1
+Self-defense course,1
+Safety app,1
+Individual feedback,1
+Personal growth,1
+Minor event,1
+Neighborhood tip,1
+Local info guide,1
+Community engagement,2
+Eco-commuting,2
+Agricultural productivity,2
+Collaborative learning,2
+Community savings,2
+Collaboration,2
+Community food,2
+Health improvement,2
+Mobility,2
+Urban farming,2
+Interactive energy,2
+Solar learning,2
+Crop health,2
+Interactive,2
+Engagement,2
+Learning engagement,2
+Accessibility,2
+Data sharing,2
+Local food,2
+Building comfort,2
+Energy engagement,2
+Community,2
+Driving behavior,2
+User interaction,2
+Local farming,2
+Community support,2
+Group activity,2
+Community center,2
+Mobility initiative,2
+Public space,2
+Accessibility upgrade,2
+Social workshop,2
+Skill development,2
+Community garden,2
+Group training,2
+Interactive event,2
+Cultural festival,2
+Local celebration,2
+Social support,2
+Mobility hub,2
+Public health event,2
+Community meeting,2
+Group session,2
+Accessibility program,2
+Learning circle,2
+Safety campaign,2
+Social club,2
+Interactive platform,2
+Public forum,2
+Small business fair,2
+Community network,2
+Social gathering,2
+Public workshop,2
+Social initiative,2
+Community wellness,2
+Group discussion,2
+Local aid program,2
+Interactive session,2
+Community health,2
+Accessibility event,2
+Public park,2
+Engagement workshop,2
+Community building,2
+Social training,2
+Collaborative project,2
+Mobility fair,2
+Public arts event,2
+Group coaching,2
+Local engagement,2
+Learning program,2
+Community market,2
+Interactive class,2
+Social learning,2
+Group activity center,2
+Community action,2
+Public library event,2
+Group fitness,2
+Social play,2
+Engagement program,2
+Public health workshop,2
+Group mobility,2
+Community space,2
+Social outreach,2
+Collaborative fair,2
+Group aid,2
+Community education,2
+Group learning session,2
+Public care event,2
+Social development,2
+Engagement session,2
+Group collaboration,2
+Accessibility training,2
+Mobility upgrade,2
+Public engagement,2
+Community event,2
+Social activity,2
+Urban agriculture,2
+Local collaboration,2
+Public engagement fair,2
+Group wellness,2
+Community empowerment,2
+Mobility session,2
+Social circle,2
+Group interaction,2
+Community inclusion,2
+Social workshop event,2
+Public art installation,2
+Group well-being,2
+Community clean-up,2
+Urban fitness,2
+Local social club,2
+Group engagement fair,2
+Community connection,2
+Public discussion,2
+Social resource center,2
+Mobility event,2
+Community support event,2
+Engagement class,2
+Urban comfort,3
+Public health,3
+Community integration,3
+Inclusive management,3
+Inclusion,3
+Education,3
+Public safety,3
+Community well-being,3
+Community spaces,3
+Urban engagement,3
+Urban living,3
+Early diagnosis,3
+Public health initiative,3
+Social justice program,3
+Urban accessibility plan,3
+Education reform,3
+Community well-being hub,3
+Inclusive development,3
+Housing support system,3
+City-wide mobility,3
+Environmental justice,3
+Social infrastructure,3
+Large-scale engagement,3
+Equitable access,3
+Urban transformation,3
+Healthcare access,3
+City-wide collaboration,3
+Inclusive spaces,3
+Urban inclusion strategy,3
+Digital education platform,3
+City health network,3
+Public space expansion,3
+City-wide safety plan,3
+Affordable housing,3
+Public service program,3
+Urban education center,3
+Social inclusion policy,3
+Comprehensive mobility,3
+Accessibility improvement,3
+Civic engagement hub,3
+Inclusive city planning,3
+Social service upgrade,3
+City-wide learning,3
+Community development,3
+Affordable health care,3
+Urban connectivity plan,3
+Social housing,3
+Equitable infrastructure,3
+City health services,3
+City mobility network,3
+Widespread wellness,3
+Public services upgrade,3
+Urban renewal,3
+Inclusive education,3
+City engagement program,3
+Public health center,3
+Widespread inclusion,3
+City-wide connectivity,3
+Social equity project,3
+Urban accessibility,3
+City safety program,3
+Inclusive services,3
+Community development program,3
+Comprehensive housing,3
+Public wellness program,3
+City space renewal,3
+Urban health initiative,3
+Digital inclusion,3
+Community revitalization,3
+Public infrastructure,3
+City collaboration,3
+Urban safety network,3
+Social wellness plan,3
+Inclusive reform,3
+City support program,3
+Public access improvement,3
+Comprehensive care,3
+City environment upgrade,3
+Social improvement program,3
+Urban wellness plan,3
+Public service initiative,3
+City-wide education,3
+Social welfare reform,3
+Urban transformation plan,3
+Community health network,3
+Comprehensive social reform,3
+City revitalization project,3
+Public health infrastructure,3
+Urban health center,3
+City safety initiative,3
+Inclusive urban planning,3
+City-wide reform,3
+Urban inclusion plan,3
+Widespread access program,3
+Social transformation,3
+Public health upgrade,3
+City service hub,3
+Inclusive public spaces,3
+Urban renewal strategy,3
+Community wellness center,3
+Comprehensive city plan,3
+Public education program,3
+Urban connectivity hub,3
+City engagement initiative,3
+Equitable community project,3
+Urban health reform,3
+Social infrastructure program,3
+City-wide wellness hub,3
+Digital accessibility,3
+Urban inclusion program,3
+Public housing initiative,3

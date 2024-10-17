@@ -1,312 +1,361 @@
-Keyword
-Solar energy
-Battery monitoring
-Camera sensors
-Sensors
-Solar sensing
-Energy sensors
-Sensor-based design
-Environmental sensors
-Health sensors
-Grasping sensors
-Real-time health data
-Sonar sensors
-Weather sensors
-Plant sensors
-Building sensors
-Microgrid sensors
-Non-invasive sensors
-Distance sensors
-Grid performance sensors
-Driving behavior sensors
- Weather data
- Solar capture
- Real-time data
- Learning feedback
- Real-time shading
- Real-time feedback
- Activity tracking
- Crop health
- Camera data
- Position sensors
- Sleep monitoring
- Navigation sensors
- Humidity
- Energy use
- Real-time performance
- Real-time consumption
- Gesture tracking
- Emotion detection
- Real-time monitoring
- Monitoring
- Sensors
- Energy sensors
- Usage data
- Comfort sensing
- User input
- Data
- Ultrasonic
- Feedback
- ECG
- Air quality
- Environment
- Data feedback
- Real-time input
- Camera
- Consumption
- Alerts
-data
-monitoring
-real-time
-feedback
-measurement
-detection
-tracking
-environmental
-automation
-collection
-capture
-acquisition
-system
-network
-optical
-analysis
-information
-surveillance
-input
-response
-control
-alert
-real-time monitoring
-sensor networks
-data acquisition
-sensor systems
-environmental monitoring
-data collection
-real-time feedback
-sensor data
-data tracking
-system detection
-optical sensors
-sensor input
-remote sensing
-data analysis
-sensing technology
-real-time data
-smart sensors
-temperature sensors
-motion detection
-tracking systems
-sensor calibration
-system automation
-information capture
-feedback systems
-real-time sensor monitoring
-data acquisition systems
-environmental data collection
-sensor-based systems
-real-time tracking data
-remote environmental monitoring
-sensing system automation
-real-time sensor networks
-optical sensor feedback
-sensor-based information systems
-motion detection systems
-real-time data capture
-sensor feedback systems
-remote sensing technology
-real-time environmental data
-information tracking systems
-feedback monitoring systems
-sensing data analysis
-real-time control systems
-sensing data acquisition
-automated detection systems
-sensor network calibration
-remote data acquisition
-sensor-driven technology
-real-time data monitoring
-environmental sensing networks
-sensing and automation systems
-sensor-driven solutions
-data-driven feedback systems
-automated environmental monitoring
-sensor data integration
-real-time surveillance systems
-real-time information capture
-automated sensor tracking
-environmental sensing solutions
-automated sensing responses
-real-time optical sensors
-sensor-controlled feedback loops
-sensor-driven control systems
-remote sensing platforms
-smart sensor integration
-sensor-based automation systems
-environmental data feedback
-real-time feedback technology
-environmental sensor networks
-sensor-driven environmental monitoring
-automated motion detection
-data-driven sensing solutions
-real-time control responses
-automated sensor feedback
-temperature sensor
-humidity sensor
-pressure sensor
-proximity sensor
-infrared sensor
-ultrasonic sensor
-optical sensor
-GPS sensor
-motion sensor
-accelerometer
-gyroscope
-light sensor
-magnetic sensor
-flow sensor
-gas sensor
-vibration sensor
-force sensor
-distance sensor
-current sensor
-voltage sensor
-resistance sensor
-touch sensor
-color sensor
-Bosch Sensortec
-Texas Instruments
-Honeywell
-STMicroelectronics
-Sensirion
-Omron
-Panasonic
-Analog Devices
-TE Connectivity
-Siemens
-Maxim Integrated
-Infineon
-Vishay
-Murata
-Raspberry Pi Sensors
-Arduino Sensors
-Adafruit Sensors
-SparkFun Sensors
-Particle Sensors
-LiDAR
-RADAR
-Sonar
-MEMS
-IoT sensors
-wearable sensors
-wireless sensors
-fiber optic sensors
-biosensors
-chemical sensors
-thermal sensors
-industrial sensors
-automotive sensors
-medical sensors
-smart home sensors
-remote sensing sensors
-embedded sensors
-energy harvesting sensors
-sensor fusion
-sensor arrays
-sensor grids
-wireless sensor networks
-AI-powered sensors
-cloud-connected sensors
-predictive maintenance sensors
-sensor data fusion
-sensor signal processing
-IoT sensor platforms
-IoT
-fiber
-sensor
-signal
-algorithm
-motion
-environment
-fusion
-telemetry
-satellite
-array
-grid
-remote
-output
-infrared
-proximity
-observation
-calibration
-prediction
-actuator
-thermal
-AI
-smart
-adaptive
-ultrasonic
-remote sensors
-motion sensors
-infrared sensors
-fiber optics
-signal processing
-predictive maintenance
-cloud sensors
-sensor feedback
-data fusion
-real-time sensors
-sensor response
-motion tracking
-vibration sensors
-pressure sensors
-flow sensors
-sensor automation
-signal detection
-sensor telemetry
-detection systems
-AI sensors
-smart home
-network sensors
-data monitoring
-sensor signals
-voltage sensors
-current sensors
-sensor integration
-sensor control
-real-time data analysis
-AI-powered sensor networks
-real-time feedback systems
-sensor fusion algorithms
-cloud-connected sensor platforms
-wearable sensor technology
-motion detection sensors
-optical sensor arrays
-automotive sensor systems
-remote sensor calibration
-sensor-based data fusion
-temperature monitoring systems
-real-time motion tracking
-AI-powered sensing systems
-cloud-based sensor systems
-motion-sensing algorithms
-real-time sensor feedback
-sensor-driven feedback systems
-remote data sensors
-energy-efficient sensor networks
-sensor-controlled feedback systems
-motion detection algorithms
-automated sensor calibration
-predictive maintenance systems
-sensor-based predictive maintenance
-sensor telemetry analysis
-sensor grid networks
-real-time sensing systems
-energy-harvesting sensors
-smart sensor platforms
-remote sensor automation
-temperature-sensing technologies
-smart city sensors
-sensor-based feedback systems
-cloud-based sensor data
-sensor data acquisition
+Keyword,Level
+Sensors,1
+Weather data,1
+Humidity,1
+Monitoring,1
+User input,1
+Data,1
+Feedback,1
+collection,1
+input,1
+Temperature,1
+Light,1
+Pressure,1
+Motion,1
+Sound,1
+Proximity,1
+Vibration,1
+Presence,1
+Flow,1
+Detection sensor,1
+Air sensor,1
+Heat sensor,1
+Light detection,1
+Basic sensor,1
+Water sensor,1
+Data logger,1
+Temperature reading,1
+Humidity gauge,1
+Sensor unit,1
+Wireless sensor,1
+Remote monitor,1
+Energy sensor,1
+Soil sensor,1
+Acoustic sensor,1
+Simple gauge,1
+Radiation sensor,1
+Noise meter,1
+Water quality,1
+Motion detector,1
+Fire alarm,1
+Light meter,1
+Gas detector,1
+Voltage sensor,1
+Pulse sensor,1
+Basic monitor,1
+Chemical gauge,1
+Water flow,1
+Speed sensor,1
+Air flow,1
+Current monitor,1
+Distance gauge,1
+Level sensor,1
+Basic data,1
+Basic reading,1
+Radiation gauge,1
+Gas meter,1
+Liquid level,1
+Basic input,1
+Vibration gauge,1
+Speed monitor,1
+Water depth,1
+Pressure gauge,1
+Basic control,1
+Force meter,1
+Wind sensor,1
+Soil moisture,1
+Level gauge,1
+Altitude sensor,1
+Noise sensor,1
+Light sensor,1
+Basic surveillance,1
+Motion monitor,1
+Sensor reading,1
+Power sensor,1
+Simple logger,1
+Chemical sensor,1
+Fire sensor,1
+Heat monitor,1
+Flow meter,1
+Temperature control,1
+Environment sensor,1
+Impact meter,1
+Location sensor,1
+Simple system,1
+Range sensor,1
+Distance meter,1
+Pulse monitor,1
+Heat gauge,1
+Data device,1
+Sensor alarm,1
+Analog sensor,1
+Dust sensor,1
+Particle counter,1
+Smoke sensor,1
+Strain gauge,1
+Soil pH,1
+Air analyzer,1
+CO2 monitor,1
+Light logger,1
+Fluid sensor,1
+Simple detection,1
+Position sensor,1
+Angle sensor,1
+Basic logger,1
+Humidity level,1
+Fire detection,1
+Analog gauge,1
+Basic acquisition,1
+Solar energy,2
+Battery monitoring,2
+Camera sensors,2
+Solar sensing,2
+Energy sensors,2
+Grasping sensors,2
+Sonar sensors,2
+Weather sensors,2
+Plant sensors,2
+Distance sensors,2
+Solar capture,2
+Real-time data,2
+Learning feedback,2
+Real-time feedback,2
+Activity tracking,2
+Crop health,2
+Camera data,2
+Position sensors,2
+Energy use,2
+Usage data,2
+Comfort sensing,2
+Ultrasonic,2
+Air quality,2
+Environment,2
+Data feedback,2
+Camera,2
+Consumption,2
+real-time,2
+measurement,2
+detection,2
+tracking,2
+environmental,2
+capture,2
+acquisition,2
+system,2
+analysis,2
+information,2
+response,2
+control,2
+Camera sensor,2
+GPS tracking,2
+Smart monitor,2
+Optical sensor,2
+Vibration monitor,2
+Speed control,2
+Remote sensing,2
+Motion detection,2
+Proximity alert,2
+Environmental scan,2
+Power meter,2
+Signal sensor,2
+Health monitoring,2
+Location tracking,2
+Radiation reading,2
+Energy management,2
+Gesture detection,2
+Air monitoring,2
+Liquid sensor,2
+Force monitor,2
+Navigation sensor,2
+Water tracking,2
+Crop monitoring,2
+Pressure reading,2
+Remote system,2
+Sound measurement,2
+Humidity tracking,2
+Mobile sensor,2
+Data acquisition,2
+Device monitoring,2
+Temperature tracking,2
+Digital sensor,2
+Network sensor,2
+Wireless gauge,2
+Visual feedback,2
+Optical monitoring,2
+Energy reading,2
+Image recognition,2
+Data synchronization,2
+Sensor array,2
+Water analysis,2
+Structural sensor,2
+Location gauge,2
+Efficiency meter,2
+Thermal control,2
+Network feedback,2
+Environmental meter,2
+Cloud monitor,2
+Movement tracking,2
+System alert,2
+Smart capture,2
+Data logger unit,2
+Interactive sensor,2
+Gas reading,2
+Noise control,2
+Vehicle tracking,2
+Smart reading,2
+Security system,2
+Impact sensor,2
+Activity detection,2
+Object tracking,2
+Data processor,2
+Energy feedback,2
+Digital logger,2
+Sensor network,2
+Weather station,2
+Atmospheric gauge,2
+Chemical detection,2
+Fire response,2
+Dynamic input,2
+Thermal sensor,2
+Real-time logger,2
+Machine monitoring,2
+Pollution tracking,2
+Energy use tracker,2
+Intelligent gauge,2
+Electric sensor,2
+Soil analysis,2
+Optical measurement,2
+Dynamic sensor,2
+Fluid control,2
+Humidity sensor,2
+Real-time analysis,2
+Chemical analyzer,2
+Industrial sensor,2
+Active control,2
+Network monitoring,2
+Signal tracking,2
+Temperature feedback,2
+Urban monitoring,2
+Sensor-based design,3
+Environmental sensors,3
+Health sensors,3
+Real-time health data,3
+Building sensors,3
+Microgrid sensors,3
+Non-invasive sensors,3
+Grid performance sensors,3
+Driving behavior sensors,3
+Real-time shading,3
+Sleep monitoring,3
+Navigation sensors,3
+Real-time performance,3
+Real-time consumption,3
+Gesture tracking,3
+Emotion detection,3
+Real-time monitoring,3
+ECG,3
+Real-time input,3
+Alerts,3
+automation,3
+network,3
+optical,3
+surveillance,3
+alert,3
+Grid performance sensor,3
+Driving behavior monitor,3
+Smart surveillance system,3
+Optical fiber sensor,3
+Energy management system,3
+Advanced data processing,3
+Digital twin model,3
+Smart network control,3
+Predictive analytics system,3
+Automated detection device,3
+Integrated monitoring platform,3
+Biometric data reader,3
+Urban management system,3
+IoT sensor array,3
+Predictive maintenance system,3
+Digital security system,3
+Intelligent automation unit,3
+Advanced sensing system,3
+Smart city analytics,3
+High-resolution monitoring,3
+Remote sensing platform,3
+Machine vision network,3
+Real-time alert system,3
+Environmental sensing array,3
+Multi-sensor integration,3
+Intelligent feedback system,3
+High-fidelity data logger,3
+Surveillance analytics,3
+Smart traffic management,3
+Vehicle diagnostics monitor,3
+Urban safety system,3
+Grid automation control,3
+Digital mapping sensor,3
+Advanced energy optimization,3
+AI-assisted monitoring,3
+Comprehensive data network,3
+Industrial automation sensor,3
+Predictive health monitoring,3
+Automated grid control,3
+High-resolution tracking,3
+Intelligent air quality monitor,3
+Thermal imaging system,3
+Data fusion platform,3
+Adaptive sensing device,3
+Climate monitoring array,3
+Dynamic environmental monitor,3
+Infrared surveillance sensor,3
+High-precision measurement,3
+Smart alert device,3
+Mobile data analytics,3
+Advanced sensor network,3
+Emergency response system,3
+Optical analysis system,3
+Biometric authentication device,3
+Automated control network,3
+Networked sensing platform,3
+Decision support system,3
+Urban planning analytics,3
+Cloud-based surveillance,3
+Advanced control system,3
+AI-powered monitoring,3
+Integrated health system,3
+Structural monitoring network,3
+Autonomous vehicle sensor,3
+Emergency monitoring unit,3
+Industrial diagnostics system,3
+Climate control platform,3
+Intelligent monitoring solution,3
+Remote diagnostics system,3
+Smart logistics monitor,3
+Comprehensive data array,3
+Enhanced security system,3
+Optical fiber array,3
+Motion analytics device,3
+Automated management platform,3
+Connected sensor hub,3
+Predictive air quality monitor,3
+Dynamic safety system,3
+Intelligent water control,3
+Autonomous response unit,3
+Sensor fusion technology,3
+Augmented reality monitor,3
+High-level diagnostics system,3
+Intelligent data processing,3
+Machine learning sensor,3
+Multi-environment monitor,3
+Adaptive traffic control,3
+Intelligent grid analytics,3
+Virtual monitoring environment,3
+Autonomous environmental sensor,3
+Proactive safety control,3
+Real-time data processing,3
+Digital infrastructure monitor,3
+Smart health analytics,3
+Intelligent water management,3
+Remote control unit,3
+High-capacity sensor array,3
+Automated decision platform,3
+Complex sensor integration,3
