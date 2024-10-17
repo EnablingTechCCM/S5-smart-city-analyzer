@@ -1,28 +1,60 @@
 import streamlit as st
 import requests
 import csv
+import plotly.graph_objects as go
 
 API_URL = "https://IsabelMendez.pythonanywhere.com"
 
-st.title("Smart City S5 Framework Analyzer")
+st.title("Smart City Pentagon Framework Analyzer")
 
-# Function to load keywords from a CSV file
-def load_keywords_from_csv(file_path):
-    keywords = []
+# Function to load keywords and levels from a CSV file
+def load_keywords_and_levels_from_csv(file_path):
+    keywords_levels = {}
     with open(file_path, mode='r') as file:
         reader = csv.DictReader(file)
         for row in reader:
-            keywords.append(row['Keyword'].lower())  # Ensure all keywords are in lowercase for matching
-    return keywords
+            keyword = row['Keyword'].lower()  # Ensure all keywords are in lowercase for matching
+            level = int(row['Level'])  # Read the level as an integer
+            keywords_levels[keyword] = level  # Store keyword with its level as a dictionary
+    return keywords_levels
 
-# Load keywords for each S5 feature from the corresponding CSV files
-smart_keywords = load_keywords_from_csv('smart.csv')
-sensing_keywords = load_keywords_from_csv('sensing.csv')
-sustainable_keywords = load_keywords_from_csv('sustainable.csv')
-social_keywords = load_keywords_from_csv('social.csv')
-safe_keywords = load_keywords_from_csv('safe.csv')
+# Load keywords and levels for each S5 feature from the corresponding CSV files
+smart_keywords = load_keywords_and_levels_from_csv('smart.csv')
+sensing_keywords = load_keywords_and_levels_from_csv('sensing.csv')
+sustainable_keywords = load_keywords_and_levels_from_csv('sustainable.csv')
+social_keywords = load_keywords_and_levels_from_csv('social.csv')
+safe_keywords = load_keywords_and_levels_from_csv('safe.csv')
 
-# Feedback based on missing S5 features
+# Analyze the combined product name, description, and features using keywords from CSV files
+def analyze_combined_input(product_name, description, features):
+    combined_input = product_name.lower() + " " + description.lower() + " " + " ".join(features).lower()
+    
+    def get_keywords_by_level(keywords):
+        level_dict = {1: [], 2: [], 3: []}
+        for keyword, level in keywords.items():
+            if keyword in combined_input:
+                level_dict[level].append(keyword)
+        return level_dict
+    
+    analysis = {
+        "Smart": get_keywords_by_level(smart_keywords),
+        "Sensing": get_keywords_by_level(sensing_keywords),
+        "Sustainable": get_keywords_by_level(sustainable_keywords),
+        "Social": get_keywords_by_level(social_keywords),
+        "Safe": get_keywords_by_level(safe_keywords),
+    }
+    
+    return analysis
+
+# Calculate the average score for each S5 feature
+def calculate_average(levels):
+    total_keywords = sum(len(keywords) for keywords in levels.values())
+    weighted_sum = sum(level * len(keywords) for level, keywords in levels.items())
+    if total_keywords == 0:
+        return 0
+    return (weighted_sum / (3 * total_keywords)) * 100
+
+# Provide feedback based on missing S5 features
 def provide_s5_feedback(s5_analysis):
     feedback = {
         "Smart": "Consider adding AI, IoT, or cloud integration to make the product smarter.",
@@ -32,24 +64,37 @@ def provide_s5_feedback(s5_analysis):
         "Safe": "Ensure the product is secure and follows safety protocols."
     }
     feedback_messages = {}
-    for s5, present in s5_analysis.items():
-        if not present:
+    for s5, keywords in s5_analysis.items():
+        if not any(keywords.values()):
             feedback_messages[s5] = feedback[s5]
     return feedback_messages
 
-# Analyze the combined product name, description, and features using keywords from CSV files
-def analyze_combined_input(product_name, description, features):
-    combined_input = product_name.lower() + " " + description.lower() + " " + " ".join(features).lower()
-    
-    analysis = {
-        "Smart": any(keyword in combined_input for keyword in smart_keywords),
-        "Sensing": any(keyword in combined_input for keyword in sensing_keywords),
-        "Sustainable": any(keyword in combined_input for keyword in sustainable_keywords),
-        "Social": any(keyword in combined_input for keyword in social_keywords),
-        "Safe": any(keyword in combined_input for keyword in safe_keywords),
-    }
-    
-    return analysis
+# Function to plot radar chart based on S5 analysis
+def plot_radar_chart(s5_analysis):
+    labels = ['Smart', 'Sensing', 'Sustainable', 'Social', 'Safe']
+    values = []
+
+    for label in labels:
+        levels = s5_analysis[label]
+        score = sum(level * len(keywords) for level, keywords in levels.items())
+        max_score = 3 * sum(len(keywords) for keywords in levels.values())
+        values.append(score / max_score if max_score > 0 else 0)
+
+    fig = go.Figure(
+        data=go.Scatterpolar(
+            r=values,
+            theta=labels,
+            fill='toself'
+        )
+    )
+    fig.update_layout(
+        polar=dict(
+            radialaxis=dict(visible=True, range=[0, 1])
+        ),
+        showlegend=False,
+        title="S5 Features Radar Chart"
+    )
+    st.plotly_chart(fig)
 
 # Suggest personality traits based on product name and description
 def suggest_personality_traits(product_name, description):
@@ -77,24 +122,12 @@ def adjust_sliders_based_on_suggestions(suggested_traits):
     return openness, conscientiousness, extraversion, agreeableness, neuroticism
 
 # Initialize session state for sliders, analysis result, and button click
-if 'openness' not in st.session_state:
-    st.session_state['openness'] = 0.5
-if 'conscientiousness' not in st.session_state:
-    st.session_state['conscientiousness'] = 0.5
-if 'extraversion' not in st.session_state:
-    st.session_state['extraversion'] = 0.5
-if 'agreeableness' not in st.session_state:
-    st.session_state['agreeableness'] = 0.5
-if 'neuroticism' not in st.session_state:
-    st.session_state['neuroticism'] = 0.5
 if 's5_analysis_result' not in st.session_state:
     st.session_state['s5_analysis_result'] = None
 if 'feedback_messages' not in st.session_state:
     st.session_state['feedback_messages'] = None
-if 'personality_traits' not in st.session_state:
-    st.session_state['personality_traits'] = None
 if 'analyze_clicked' not in st.session_state:
-    st.session_state['analyze_clicked'] = False  # Control when to show S5 features
+    st.session_state['analyze_clicked'] = False
 
 # Analyze User Product
 product_name = st.text_input("Product Name")
@@ -103,55 +136,45 @@ features = st.text_input("Product Features (comma-separated)")
 
 # Button to analyze product
 if st.button("Analyze Product"):
-    # Validate that the user has filled all fields
     if not product_name or not description or not features:
         st.markdown("**:red[Please fill in the Product Name, Description, and Features fields.]**")
     elif ";" in features:
         st.markdown("**:red[Please use a comma to separate the features, not a semicolon.]**")
     else:
         features_list = features.split(',')
-        
-        # Analyze combined product name, description, and features
         s5_analysis_result = analyze_combined_input(product_name, description, features_list)
-        st.session_state['s5_analysis_result'] = s5_analysis_result  # Store in session state
-        
-        # Provide feedback for missing S5 features
+        st.session_state['s5_analysis_result'] = s5_analysis_result
         feedback_messages = provide_s5_feedback(s5_analysis_result)
-        st.session_state['feedback_messages'] = feedback_messages  # Store in session state
-        
-        # Suggest Personality Traits based on Product Name and Description
+        st.session_state['feedback_messages'] = feedback_messages
         personality_traits = suggest_personality_traits(product_name, description)
-        st.session_state['personality_traits'] = personality_traits  # Store in session state
-        
-        # Adjust the sliders based on personality traits
+        st.session_state['personality_traits'] = personality_traits
         st.session_state['openness'], st.session_state['conscientiousness'], st.session_state['extraversion'], st.session_state['agreeableness'], st.session_state['neuroticism'] = adjust_sliders_based_on_suggestions(personality_traits)
-        
-        # Set that analyze has been clicked
         st.session_state['analyze_clicked'] = True
 
-# Display S5 Analysis and personality traits only if the "Analyze Product" button was clicked
+# Display S5 Analysis and radar chart if the "Analyze Product" button was clicked
 if st.session_state['analyze_clicked']:
-    # Display S5 Analysis from session state
     st.write(f"S5 Analysis for {product_name}")
-    for s5, value in st.session_state['s5_analysis_result'].items():
-        st.write(f"{s5}: {'Yes' if value else 'No'}")
-    
+
+    # Display analysis results with average percentage values
+    for s5, levels in st.session_state['s5_analysis_result'].items():
+        average = calculate_average(levels)
+        level_output = []
+        for level, keywords in levels.items():
+            if keywords:
+                level_output.append(f"Level {level}: {', '.join(keywords)}")
+        st.write(f"{s5} ({average:.0f}%): {', '.join(level_output) if level_output else 'No relevant keywords found'}")
+
     # Provide feedback for missing S5 features
     st.subheader("Enhancing Your Product for S5 Compliance")
-    for s5, present in st.session_state['s5_analysis_result'].items():
-        if not present:
+    for s5, levels in st.session_state['s5_analysis_result'].items():
+        if not any(levels.values()):
             st.write(f"Suggestion to improve {s5}: {st.session_state['feedback_messages'][s5]}")
-
-    # Display Personality Traits Suggestions
-    if st.session_state['personality_traits']:
-        st.subheader("Personality Traits Suggestions for this Product")
-        if st.session_state['personality_traits']:
-            st.write(f"Based on the product name, description, and features, we suggest the following personality traits: {', '.join(st.session_state['personality_traits'])}")
-        else:
-            st.write("No associated personality traits were found based on the product title, description, and features.")
-            st.write("You can manually adjust the personality traits sliders to see related solutions.")
     
-    # Add the new button (styled) to redirect to the S5 improvement link above the slider
+    # Display radar chart
+    st.subheader("S5 Features Radar Chart")
+    plot_radar_chart(st.session_state['s5_analysis_result'])
+
+    # Improvement button
     st.markdown(
         """
         <a href="https://chatgpt.com/g/g-7SqJsJoeF-smart-city-s5-compliance-assistant" target="_blank">
@@ -162,14 +185,15 @@ if st.session_state['analyze_clicked']:
         """, unsafe_allow_html=True
     )
     
-    # Personalize Recommendations based on Big Five personality traits
+    # Sliders for personality traits
     st.subheader("Adjust Personality Traits Sliders Based on Suggestions")
-    openness = st.slider("Openness", 0.0, 1.0, st.session_state['openness'])
-    conscientiousness = st.slider("Conscientiousness", 0.0, 1.0, st.session_state['conscientiousness'])
-    extraversion = st.slider("Extraversion", 0.0, 1.0, st.session_state['extraversion'])
-    agreeableness = st.slider("Agreeableness", 0.0, 1.0, st.session_state['agreeableness'])
-    neuroticism = st.slider("Neuroticism", 0.0, 1.0, st.session_state['neuroticism'])
+    openness = st.slider("Openness", 0.0, 1.0, st.session_state.get('openness', 0.5))
+    conscientiousness = st.slider("Conscientiousness", 0.0, 1.0, st.session_state.get('conscientiousness', 0.5))
+    extraversion = st.slider("Extraversion", 0.0, 1.0, st.session_state.get('extraversion', 0.5))
+    agreeableness = st.slider("Agreeableness", 0.0, 1.0, st.session_state.get('agreeableness', 0.5))
+    neuroticism = st.slider("Neuroticism", 0.0, 1.0, st.session_state.get('neuroticism', 0.5))
 
+    # Button to exemplify other solutions based on personality traits
     if st.button("Exemplify other solutions based on Personality Traits"):
         data = {
             "openness": openness,
@@ -180,7 +204,7 @@ if st.session_state['analyze_clicked']:
         }
         
         response = requests.post(f"{API_URL}/personalize", json=data)
-        recommendations = response.json()['recommended_solutions']
+        recommendations = response.json().get('recommended_solutions', [])
         
         st.write("S5 Exemplification Solutions:")
         for rec in recommendations:
