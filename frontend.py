@@ -1,7 +1,6 @@
 import streamlit as st
 import requests
 import csv
-pip install plotly
 import plotly.graph_objects as go
 
 API_URL = "https://IsabelMendez.pythonanywhere.com"
